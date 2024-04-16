@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        img {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+          #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #bed3c6;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+          }
+          #navbar a {
+            color: #080808;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+                  }
+          .content {
+            padding: 16px;
+          }
+          .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+          } 
+          .sticky + .content {
+            padding-top: 60px;
+          }
+          .heading{
+            float:right;
+            margin-right: 200px;
+            margin-top: 50px;
+            font-size: 20px;
+            font-family: sans-serif;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 2pX 12px 12px rgba(0.1, 0.1, 0.1, 0.1);
+            padding: 20px;
+          }
+        .property {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            margin-left: 100px;
+            padding: 20px;
+            max-width: 300px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 20px;
+        }
+        .property img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .property h2 {
+            font-size: 1.2rem;
+            margin: 0 0 10px;
+        }
+        .property p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="Aboutme.html">About me </a>
+        <a href="property1.html">Property 1</a>
+        <a href="property2.html">Property 2</a>
+        <a href="property3.html">Property 3</a>
+        <a href="contact.html">Contact Form</a>
+        <a href="creditpage.html">Credit Page</a>
+      </div>
+           
+      <div class="container">
+        <img src="Screenshot 2024-04-15 135756.png" alt="pic" width="400" height="400" style="border: #090909">
+        <div class="heading">
+            <h2>Sam Surendran</h2>
+
+           <p> <i>I'm a diligent and approachable individual, passionate about connecting people <br>
+            with their ideal living spaces. With a keen eye for detail and a knack for <br>
+            understanding diverse needs, I offer three distinct apartments for rent, each <br>
+            meticulously curated to cater to different lifestyles and preferences...........</i>
+             <br>
+             <h3><a href="Aboutme.html" target="_blank">About Me</a></h3>
+        </p>
+         </div>
+      </div>
+        <div class="property">
+            <a href="property1.html">  <img src="property1.jpeg" alt="Property 1"></a>
+          
+            <h2>Attached/Row/Townhouse</h2>
+            <p>Location: 19 WEEKES DR AJAX, ONTARIO, CANADA, L1T3T3
+            </p>
+            <p>Price: $899,900</p>
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 4</p>
+        </div>
+
+        <div class="property">
+            <a href="property2.html">      <img src="property2.jpeg" alt="Property 2" ></a>
+      
+            <h2>Royal Lepage Ignite Realty</h2>
+            <p>Location: 389 DELANEY DR AJAX, ONTARIO, L1T3Y8</p>
+            <p>Price: $1,195,000</p>
+            <p>Bedrooms: 5</p>
+            <p>Bathrooms: 4</p>
+        </div>
+
+        <div class="property">
+          <a href="property3.html">      <img src="property3.jpeg" alt="Property 3"></a>
+      
+            <h2>Apartment/Condo</h2>
+            <p>Location: Apartment/Condo</p>
+            <p>Price: $170,000</p>
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 2</p>
+        </div>
+    
+   
+</body>
+</html>

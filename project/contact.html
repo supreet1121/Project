@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Preferences Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #bed3c6;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+          }
+          #navbar a {
+            color: #080808;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+                  }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="Aboutme.html">About me </a>
+        <a href="property1.html">Property 1</a>
+        <a href="property2.html">Property 2</a>
+        <a href="property3.html">Property 3</a>
+        <a href="contact.html">Contact Form</a>
+        <a href="creditpage.html">Credit Page</a>
+      </div>
+    <div class="container">
+        <h2>Property Form</h2>
+        <form action="mailto:agents@example.com" method="post" enctype="text/plain">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="propertyType">Type of Property:</label>
+            <select id="propertyType" name="propertyType">
+                <option value="house">House</option>
+                <option value="condo">Appartment</option>
+            </select>
+
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" min="1" required>
+
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" min="1" required>
+
+            <label for="priceRange">Price Range:</label>
+            <input type="text" id="priceRange" name="priceRange" required>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
